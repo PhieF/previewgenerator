@@ -160,7 +160,7 @@ class Generate extends Command {
 		\OC_Util::setupFS($user->getUID());
 
 		$userFolder = $this->rootFolder->getUserFolder($user->getUID());
-		$this->parseFolder($userFolder);
+		$this->parseFolder($userFolder->get("Samsung/hubiC/Photos"));
 	}
 
 	/**
